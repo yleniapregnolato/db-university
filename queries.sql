@@ -26,4 +26,12 @@ WHERE DATE(date) = "2020-06-20"
 AND HOUR(hour) >= 14
 ORDER BY `hour`;
 
+-- selezionare tutti i corsi di laurea magistrale (38)
+SELECT * 
+FROM `degrees`
+WHERE `level`= "magistrale";
+
+-- da quanti dipartimenti è composta l'università?
+SELECT COUNT(`id`) AS `departments`
+FROM `departments`;
 
