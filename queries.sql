@@ -31,7 +31,16 @@ SELECT *
 FROM `degrees`
 WHERE `level`= "magistrale";
 
--- da quanti dipartimenti è composta l'università?
+-- da quanti dipartimenti è composta l'università? (12)
 SELECT COUNT(`id`) AS `departments`
 FROM `departments`;
+
+-- quanti sono gli inegnanti che non hanno un numero di telefono? (50)
+SELECT COUNT(`id`) AS `teachers`
+FROM `teachers`
+WHERE `phone` IS NULL;
+
+-- inserire nella tabella degli studenti un nuovo record con i propri dati
+INSERT INTO `students` (`degree_id`, `name`, `surname`, `date_of_birth`, `fiscal_code`, `enrolment_date`, `registration_number`, `email`)
+VALUES ("35", "ylenia", "pregnolato", "1994-09-02", "CCCAA3489", "2024-05-29", "560099", "ylenia@gmail.com");
 
