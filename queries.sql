@@ -44,3 +44,12 @@ WHERE `phone` IS NULL;
 INSERT INTO `students` (`degree_id`, `name`, `surname`, `date_of_birth`, `fiscal_code`, `enrolment_date`, `registration_number`, `email`)
 VALUES ("35", "ylenia", "pregnolato", "1994-09-02", "CCCAA3489", "2024-05-29", "560099", "ylenia@gmail.com");
 
+-- cambiare il numeri dell'ufficio del professor Pietro Rizzo in 126
+UPDATE `teachers`
+SET `office_address` = "126"
+WHERE `name` = "Pietro"
+AND `surname` = "Rizzo";
+
+-- Eliminare dalla tabella studenti il record creato precedentemenete al punto 9
+DELETE FROM `students`
+WHERE `id` = 5001;
