@@ -5,3 +5,6 @@ GROUP BY `year_of_enrolment`
 ORDER BY `year_of_enrolment`;
 
 -- contare gli insegnanti che hanno l'ufficio nello stesso edificio
+SELECT `teachers`.`office_address`, COUNT(*) AS `teachers_number`
+FROM `teachers`
+GROUP BY `office_address`
