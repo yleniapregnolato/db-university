@@ -30,4 +30,4 @@ INNER JOIN `degrees`
 ON `students`.`degree_id` = `degrees`.`id`
 INNER JOIN `departments`
 ON `degrees`.`department_id` = `departments`.`id`
-ORDER BY `students`.name, `students`.`surname`;
+ORDER BY `students`.`name`, `students`.`surname`;
