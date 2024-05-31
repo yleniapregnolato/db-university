@@ -31,3 +31,5 @@ ON `students`.`degree_id` = `degrees`.`id`
 INNER JOIN `departments`
 ON `degrees`.`department_id` = `departments`.`id`
 ORDER BY `students`.`name`, `students`.`surname`;
+
+-- Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti

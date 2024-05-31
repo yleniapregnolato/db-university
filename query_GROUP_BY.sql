@@ -8,6 +8,7 @@ ORDER BY `year_of_enrolment`;
 SELECT `teachers`.`office_address`, COUNT(*) AS `teachers_number`
 FROM `teachers`
 GROUP BY `office_address`
+HAVING COUNT(*) > 1;
 
 -- Calcolare la media dei voti di ogni appello d'esame
 SELECT `exam_student`.`exam_id` AS `id`, AVG(`exam_student`.`vote`) AS `avarage_grades`
